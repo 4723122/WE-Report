@@ -37,3 +37,24 @@ for book in books: #ループ処理で本の一覧を出力
 1. Java基礎 - 佐藤花子 (2023) ISBN: 978-4-987654-32-1 価格: 2800円
 2. Web開発 - 山田次郎 (2023) ISBN: 978-4-111111-11-1 価格: 3200円
 3. Python - 田中太郎 (2024) ISBN: 987-4-123456-78-9 価格: 2500円
+
+@4723122 ➜ /workspaces/WE-Python (main) $ git add .
+@4723122 ➜ /workspaces/WE-Python (main) $ git commit -m "add Re4"
+[main 882770a] add Re4
+ 6 files changed, 51 insertions(+)
+ rename Dockerfile => .devcontainer/Dockerfile (100%)
+ rename devcontainer.json => .devcontainer/devcontainer.json (100%)
+ rename {library-scripts => .devcontainer/library-scripts}/common-debian.sh (100%)
+ rename {library-scripts => .devcontainer/library-scripts}/docker-in-docker-debian.sh (100%)
+ create mode 100644 book_manager.py
+ create mode 100644 main.py
+@4723122 ➜ /workspaces/WE-Python (main) $ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.01 KiB | 1.01 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/4723122/WE-Python
+   51a2c48..882770a  main -> main
+branch 'main' set up to track 'origin/main'.
