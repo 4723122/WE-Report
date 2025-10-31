@@ -3,13 +3,13 @@
 
 ## 各エンドポイントでのSwagger UIでのテスト結果
 ### GET /
-Request:
+Request 1:
 ```
 curl -X 'GET' \
   'http://localhost:8000/' \
   -H 'accept: application/json'
 ```
-Reaponse:
+Reaponse 1:
 ```
 {
   "Hello": "World"
@@ -17,13 +17,13 @@ Reaponse:
 ```
 
 
-Request:
+Request 2:
 ```
 curl -X 'GET' \
   'http://localhost:8000/health' \
   -H 'accept: application/json'
 ```
-Response:
+Response 2:
 ```
 {
   "status": "healthy"
@@ -31,13 +31,13 @@ Response:
 ```
 
 
-Request:
+Request 3:
 ```
 curl -X 'GET' \
   'http://localhost:8000/items/2' \
   -H 'accept: application/json'
 ```
-Response:
+Response 3:
 ```
 {
   "item_id": 2
@@ -45,20 +45,13 @@ Response:
 ```
 
 
-Request:
+Request 4:
 ```
 curl -X 'GET' \
   'http://localhost:8000/items/0' \
   -H 'accept: application/json'
 ```
-
-Request:
-```
-curl -X 'GET' \
-  'http://localhost:8000/items/0' \
-  -H 'accept: application/json'
-```
-Response:
+Response 4:
 ```
 {
   "detail": "item_id must be positive"
